@@ -1,0 +1,32 @@
+{
+  "name": "redux-observable-extensions",
+  "version": "0.1.0",
+  "description": "Useful extensions to redux-observable",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksachdeva/redux-observable-extensions.git"
+  },
+  "keywords": [
+    "redux",
+    "rx",
+    "reactive",
+    "observable",
+    "decorators"
+  ],
+  "author": "Kapil Sachdeva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksachdeva/redux-observable-extensions/issues"
+  },
+  "homepage": "https://github.com/ksachdeva/redux-observable-extensions#readme",
+  "devDependencies": {
+    "es6-shim": "^0.35.1",
+    "redux": "^3.6.0",
+    "redux-observable": "^0.11.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.12"
+  }
+}
