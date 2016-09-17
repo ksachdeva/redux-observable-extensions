@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs/Observable';
 import { merge } from 'rxjs/observable/merge';
 import { Epic, ActionsObservable} from 'redux-observable';
 
@@ -13,12 +14,12 @@ function flatten(list: any[]): any[] {
 }
 
 export function mergeEpics<T>(...epics: any[]): Epic<T> {
-  return function(actions: ActionsObservable<T>, store) {
+  return function(actions: ActionsObservable<T>, store): Observable<T> {
     const epicFns = flatten(epics).map(e => {
       const keys = getEpicKeys(e);
       return keys.map(k => e[k](actions, store));
     });
 
-    return merge(...flatten(epicFns));
+    return merge<T>(...flatten(epicFns));
   };
 }
