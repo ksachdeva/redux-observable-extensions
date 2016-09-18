@@ -2,6 +2,10 @@
 
 Useful extensions for [redux-observable](https://github.com/redux-observable/redux-observable)
 
+```bash
+npm install redux-observable-extensions --save
+```
+
 ## Epic decorator
 
 If you want to have your epic functions inside a class for e.g.
